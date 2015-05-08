@@ -44,7 +44,7 @@ public class GenericResource {
         //TODO return proper representation object
 //        throw new UnsupportedOperationException();
         IComponentsData db = new DB();
-        db.initialLoad("LAMS");
+//        db.initialLoad("LAMS");
         List<Object> objs = db.getData("Appointment", "");
         return "<size>" + objs.size() + "</size>";
     }
